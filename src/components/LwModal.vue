@@ -18,7 +18,7 @@
           <slot></slot>
         </div>
         <div class="ls-modal-footer" v-if="hasFooter">
-          <button type="submit" @click.enter="send" class="ls-btn-primary ls-float-right">{{labelSend}}</button>
+          <button type="submit" @click.enter="send" class="ls-btn-primary">{{labelSend}}</button>
           <button class="ls-btn" @click="close">{{labelClose}}</button>
         </div>
         <input type="checkbox" class="hide-access" @focus="forceFocus">
@@ -79,6 +79,10 @@
     &.popover
       .ls-modal-footer
         display: none
+
+    .ls-btn-primary
+      float: right
+
 
   .ls-modal-box
     display: inline-block
@@ -169,7 +173,7 @@
 
 <script>
   export default {
-    name: 'Componente Modal',
+    name: 'Modal',
     description: 'Caixa de diálogo que recebe exibem textos e eventos de callback em suas ações ao abrir/fechar e na interação com o botão de envio.',
     token: '<modal :visible="true" :animate="true" :title="variavel">Conteúdo do Modal</modal>',
     props: {
