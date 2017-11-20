@@ -1,0 +1,94 @@
+/* Small devices (tablets, 768px and up) */
+// @media screen and (min-width: @screen-sm-min) { ... }
+$screen-sm: 768px
+
+/* Medium devices (desktops, 992px and up) */
+// @media screen and (min-width: @screen-md-min) { ... }
+$screen-md: 992px
+
+/* Large devices (large desktops, 1200px and up) */
+// @media screen and (min-width: @screen-lg-min) { ... }
+$screen-lg: 1200px
+
+$topbar-height: 60px
+$sidebar-width: 265px
+
+$default-radius: 2px
+
+// FORM FIELDS
+// Size and other measurements of forms and fields
+//
+$input-lg-height: 48px
+$input-height:    36px
+$input-sm-height: 30px
+$input-xs-height: 24px
+
+/* Used in steps component */
+$with-steps: 85px !global
+
+// FONTS
+$default-font: Ubuntu, Helvetica, Arial, Sans-serif
+$sans-serif: Helvetica, Arial, Sans-serif
+
+//variables colors default
+$gray0: #f7f7f7 // for backgrounds
+$gray1: #eee    // for border in ls-boxes
+$gray2: #ddd    // for lines on tables
+$gray3: #888    // for all fonts (with some exceptions)
+$gray4: #555    // for all fonts
+$gray5: #222    // for titles
+
+
+
+//
+// Color patterns
+//
+$color-success: #388f39
+$color-info:    #2881ac
+$color-warning: #b9a016
+$color-danger:  #d75553
+
+//
+// Rebrand Colors
+//
+$ls-color-blue: #00acc8
+$ls-color-gray: #e6e7e8
+$ls-color-dark-gray: #58595b
+$ls-color-oil-blue: #253746
+$ls-color-green: #76bd22
+$ls-color-purple: #9264cd
+$ls-color-yellow: #f6b436
+$ls-color-red: #d60037
+
+$ls-color-gray-light: #e6e7e8
+$ls-color-gray-medium: #58595b
+
+
+
+// placeholder
+
+%actions-btn
+  padding: 15px 0
+  margin: 30px 0
+  border-top: 4px solid $gray1
+  white-space: nowrap
+
+%hide-element
+  height: 0
+  opacity: 0
+  overflow: hidden
+  visibility: hidden
+
+%show-element
+  height: auto
+  opacity: 1
+  overflow: initial
+  visibility: visible
+
+%font-smoothing
+  -webkit-font-smoothing: antialiased
+  -ms-font-smoothing: antialiased
+  -moz-font-smoothing: antialiased
+  font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+

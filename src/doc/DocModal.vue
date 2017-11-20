@@ -29,53 +29,33 @@
     <p>O componente quando aberto mantém o foco do teclado somente nele. É possível fechar usando a tecla <code>ESC</code></p>
     <div class="demo">
       <p class="">Chamando o componente</p>
-      <div class="ls-list">
-        <header class="ls-list-header">
-          <div class="ls-list-title col-md-9">
-            <a href="#" >Status do modal</a>
-            <small>{{isVisible}}</small>
-          </div>
-          <div class="col-md-3 ls-txt-right">
-            <button @click="showModal" class="ls-btn-primary">Chamar modal</button>
-          </div>
-        </header>
-        <lw-modal
-          :visible="isVisible"
-          :animate="true"
-          :title="title"
-          :labelClose="txtClose"
-          :labelSend="txtSend"
-          @modal-closed="hideModal"
-          @modal-send="sendModal"
-          >
-          Conteúdo do modal
-        </lw-modal>
-      </div>
+      <button @click="showModal" class="ls-btn-primary">Chamar modal</button>
+      <lw-modal
+        :visible="isVisible"
+        :animate="true"
+        :title="title"
+        :labelClose="txtClose"
+        :labelSend="txtSend"
+        @modal-closed="hideModal"
+        @modal-send="sendModal"
+        >
+        Conteúdo do modal
+      </lw-modal>
       <hr>
       <p class="">Aplicando a prop <code>:footer="false"</code></p>
-      <div class="ls-list">
-        <header class="ls-list-header">
-          <div class="ls-list-title col-md-9">
-            <a href="#" >Status do modal</a>
-            <small>{{isVisible}}</small>
-          </div>
-          <div class="col-md-3 ls-txt-right">
-            <button @click="showModal2" class="ls-btn-primary">Chamar modal</button>
-          </div>
-        </header>
-        <lw-modal
-          :visible="isVisible2"
-          :footer="false"
-          :animate="true"
-          :title="title2"
-          :labelClose="txtClose"
-          :labelSend="txtSend"
-          @modal-closed="hideModal"
-          @modal-send="sendModal"
-          >
-          Conteúdo do modal
-        </lw-modal>
-      </div>
+      <button @click="showModal2" class="ls-btn-primary">Modal sem footer</button>
+      <lw-modal
+        :visible="isVisible2"
+        :footer="false"
+        :animate="true"
+        :title="title2"
+        :labelClose="txtClose"
+        :labelSend="txtSend"
+        @modal-closed="hideModal"
+        @modal-send="sendModal"
+        >
+        Conteúdo do modal
+      </lw-modal>
     </div>
   </div>
 </template>

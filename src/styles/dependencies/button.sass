@@ -1,0 +1,246 @@
+$percentColor: 10%
+
+// Style base button
+[class*="ls-btn"]
+  transition: all .2s
+  cursor: pointer
+  padding: 10px 16px
+  border: none
+  display: inline-block
+  font-size: 14px
+  line-height: 1.42857143
+  text-decoration: none
+  text-align: center
+  white-space: normal
+  color: #fff
+  vertical-align: top
+  font-weight: normal
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+  text-transform: uppercase
+
+  &[class*="ls-ico-"]:empty
+    border-radius: 50%
+    width: $input-lg-height
+    height: $input-lg-height
+    line-height: 2
+
+    &:before
+      margin: 0
+      vertical-align: sub
+      font-size: 18px
+      padding-right: 0
+
+  &[class*="ls-ico-"]:before
+    padding-right: 5px
+    font-size: 20px
+    vertical-align: bottom
+
+  p + &
+    margin-top: 7px
+
+  // Disabled Buttons
+  &.ls-disabled,
+  &[disabled]
+    cursor: default
+    opacity: .6
+
+  &:empty:after
+    margin-left: 0
+
+  + .ls-dropdown,
+  + [class*="ls-btn"]
+    margin-left: 5px
+
+  &.ls-btn-block
+    margin: 0
+    padding: 0
+    display: block
+    width: 100%
+
+    &:first-child
+      margin-top: 0
+
+    & + .ls-btn-block
+      margin-top: 15px
+
+  &.ls-btn-primary
+    background-color: $ls-color-blue
+
+    &:hover, &:focus, &:active, &.ls-active
+      background-color: darken($ls-color-blue, $percentColor)
+
+  &.ls-btn-dark
+    background-color: $ls-color-oil-blue
+
+    &:hover, &:focus, &:active, &.ls-active
+      background-color: darken($ls-color-oil-blue, $percentColor)
+
+  &.ls-btn-success
+    background-color: $ls-color-green
+
+    &:hover, &:focus, &:active, &.ls-active
+      background-color: darken($ls-color-green, $percentColor)
+
+  &.ls-btn-info
+    background-color: $ls-color-purple
+
+    &:hover, &:focus, &:active, &.ls-active
+      background-color: darken($ls-color-purple, $percentColor)
+
+  &.ls-btn-warning
+    background-color: $ls-color-yellow
+
+    &:hover, &:focus, &:active, &.ls-active
+      background-color: darken($ls-color-yellow, $percentColor)
+
+.ls-btn:not([class*="ls-btn-"])
+  background-color: $ls-color-gray-light
+  color: $ls-color-gray-medium
+
+  &:hover, &:focus, &:active, &.ls-active
+    background-color: darken($ls-color-gray-light, $percentColor)
+
+.ls-btn-danger,
+.ls-btn-primary-danger
+  background-color: $ls-color-red
+
+  &:hover, &:focus, &:active
+    background-color: darken($ls-color-red, $percentColor)
+
+//
+// Sizes of BTN
+//
+.ls-btn-lg
+  font-size: remtopx(1)
+  padding: 11px
+
+.ls-btn-sm
+  font-size: remtopx(.75)
+  padding: 5px 11px
+
+.ls-btn-xs
+  font-size: remtopx(.75)
+  padding: 2px 11px
+
+.ls-btn-sm,
+.ls-btn-xs
+  line-height: 1.5
+
+// BTN Groups
+.ls-group-btn
+  // @extend .ls-clearfix
+  position: relative
+  z-index: 3
+
+  &.ls-float-none-xs
+    margin-bottom: 10px
+
+  [class*="ls-btn"]
+    float: left
+    cursor: pointer
+    margin-left: 1px
+
+    &:first-child
+      margin-left: 0
+
+    &:first-child:not(:last-child)
+      border-top-right-radius: 0
+      border-bottom-right-radius: 0
+
+    &:not(:first-child):not(:last-child)
+      border-radius: 0
+
+    &:last-child:not(:first-child),
+      border-bottom-left-radius: 0
+      border-top-left-radius: 0
+
+    &:hover,
+    &:focus
+      transition: none
+
+    &.ls-btn[data-ls-module="tabs"]
+
+      & +[class*="ls-btn-"]:last-child
+        margin-left: 10px
+        border-top-left-radius: $default-radius
+        border-bottom-left-radius: $default-radius
+
+      &:not(:first-child):not(:last-child)
+        border-bottom-right-radius: $default-radius
+        border-top-right-radius: $default-radius
+
+
+  .ls-form-inline &
+    [class*="ls-btn"]
+
+      & + [class*="ls-btn"]
+        margin-left: -1px
+
+      & +[class*="ls-btn-"]:not(:first-child)
+        margin-left: 10px
+
+
+//
+// Container that wraps the buttons in forms
+//
+.ls-actions-btn
+  @extend %actions-btn
+
+  .ls-form &
+    margin: 15px
+
+    [class*="ls-btn"]:first-child
+      margin-left: 0
+
+  // when in inline forms
+  .ls-form-inline &
+    padding: 0
+    margin: 0
+    border: none
+    display: inline-block
+
+    [class*="ls-btn"] + [class*="ls-btn"]
+      margin-left: 10px
+
+  // when in horizontal forms
+  .ls-form-horizontal &
+    // @extend .ls-clearfix
+    padding-top: 21px
+    clear: both
+
+    [class*="ls-btn"]:not(.ls-btn-block)
+      margin-top: 0
+
+@media screen and (max-width: $screen-md)
+
+  .ls-actions-btn
+
+    .ls-form-inline &
+      padding: 15px 0
+      margin: 30px 0
+      border-top: 4px solid $gray1
+      white-space: nowrap
+      clear: both
+      display: block
+
+    .ls-box-filter &
+      margin: 0
+      padding: 0
+      display: inline-table
+      border: none
+
+
+@media screen and (min-width: $screen-md) and(max-width: $screen-lg)
+
+  .ls-box-filter
+
+    .ls-actions-btn
+
+      .ls-btn-primary
+        margin-top: 0
+
+    .ls-btn-primary,
+    .ls-dropdown
+      margin-top: 10px

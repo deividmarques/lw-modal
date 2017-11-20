@@ -28,7 +28,8 @@
 </template>
 
 <style lang="sass">
-  @import '../styles/config'
+  @import '../styles/dependencies/config'
+  @import '../styles/dependencies/button'
 
   $defaultWidth: 600px
   $largeWidth: 850px

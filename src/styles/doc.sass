@@ -137,19 +137,36 @@ p code
   td
     border-bottom: 1px solid #ddd
 
-.gangnam-style
-  position: absolute
-  top: 50%
-  left: calc(50% + (#{$sidebar} /2))
-  transform: translate(-50%, -50%)
-  display: flex
-  justify-content: center
-  align-items: center
+hr
+  border: 0
+  border-bottom: 1px solid #eee
+  margin: 30px 0
 
-// fade effect to transition component
-.fade-enter-active, .fade-leave-active
-  transition: opacity 0.3s
+  &[data-ls-text]
+    border-style: dashed
+    text-align: left
+
+    &:before
+      content: attr(data-ls-text)
+      display: block
+      font-size: 18px
+      font-weight: 600
+      padding: 0
+      margin-bottom: 10px
+
+// .gangnam-style
+//   position: absolute
+//   top: 50%
+//   left: calc(50% + (#{$sidebar} /2))
+//   transform: translate(-50%, -50%)
+//   display: flex
+//   justify-content: center
+//   align-items: center
+
+// // fade effect to transition component
+// .fade-enter-active, .fade-leave-active
+//   transition: opacity 0.3s
 
 
-.fade-enter, .fade-leave-active
-  opacity: 0
+// .fade-enter, .fade-leave-active
+//   opacity: 0
