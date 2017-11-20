@@ -1,29 +1,34 @@
-# lw-modal
-
-> Modal Components using Vuejs
 
 [![Build Status](https://travis-ci.org/deividmarques/lw-modal.svg?branch=master)](https://travis-ci.org/deividmarques/lw-modal)
 
 [![Coverage Status](https://coveralls.io/repos/github/deividmarques/lw-modal/badge.svg?branch=master)](https://coveralls.io/github/deividmarques/lw-modal?branch=master)
 
-## Build Setup
+# <lw-modal>
 
-``` bash
-# install dependencies
-npm install
+> Modal Components using Vuejs
 
-# serve with hot reload at localhost:8080
-npm run dev
+Veja a documentação e exemplos: https://deividmarques.github.io/lw-modal
 
-# build for production with minification
-npm run build
+## Detalhamento do componente
 
-# build for production and view the bundle analyzer report
-npm run build --report
+## Como usar o componente
 
-# run unit tests
-npm run unit
 
-# run all tests
-npm test
-```
+
+
+## Contribuia com o projeto
+
+
+## Infos para Admin
+_____
+
+
+## Todo-list antes de oficializar
+
+- [x] documentacao com exemplo
+- [x] add o travis
+- [x] publicar no npm
+- [x] gerar automaticamente o gh-pages da documentação
+- [ ] implementar o coverage status
+- [ ] criar Readme com infos pra admin/contribuidor/dev
+- [ ] testes unitarios 100% do código, testado pelo coverage
