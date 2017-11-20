@@ -1,3 +1,3 @@
-// import LwModal from './components/LwModal'
+import LwModal from './components/LwModal'
 
-// module.exports = LwModal
+module.exports = LwModal
