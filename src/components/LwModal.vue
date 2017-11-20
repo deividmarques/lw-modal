@@ -174,7 +174,7 @@
 <script>
   export default {
     name: 'Modal',
-    description: 'Caixa de diálogo que recebe exibem textos e eventos de callback em suas ações ao abrir/fechar e na interação com o botão de envio.',
+    description: 'Caixa de diálogo que recebe informações e possui eventos de callback em suas ações ao abrir/fechar e na interação com o botão de envio.',
     token: '<modal :visible="true" :animate="true" :title="variavel">Conteúdo do Modal</modal>',
     props: {
       visible: {
