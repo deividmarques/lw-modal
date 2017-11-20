@@ -1,0 +1,155 @@
+//
+// Rebrand Colors
+//
+$blue: #00acc8
+$gray: #e6e7e8
+$oil-blue: #253746
+$green: #76bd22
+$purple: #9264cd
+$yellow: #f6b436
+$red: #d60037
+
+$gray-dark: #58595b
+$gray-light: #e6e7e8
+$gray-medium: #58595b
+
+$sidebar: 200px
+$topbar-height: 50px
+
+$spacer: 20px
+$font-size-default: 15px
+
+*
+  margin: 0
+  padding: 0
+
+ul
+  list-style: none
+
+.doc
+  margin: 0 $spacer
+  text-align: left
+  font-family: 'Avenir', Helvetica, Arial, sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  color: #2c3e50
+
+  .title
+    font-size: 18px
+    margin: 0 0 20px
+
+  .subtitle
+    font-size: 17px
+    margin: 30px 0 10px
+
+  p, li
+    font-size: $font-size-default
+
+p code
+  padding: 2px 4px
+  font-size: 90%
+  color: #c7254e
+  background-color: #f9f2f4
+  white-space: nowrap
+  border-radius: 4px
+  font-family: courier, monospace
+
+.demo
+  border: solid 1px #e1e1e8
+  border-radius: 3px 3px 0 0
+  padding: 40px 20px 20px
+  margin: 25px 0 50px
+  position: relative
+
+  &::before
+    content: "Exemplo"
+    position: absolute
+    top: 0
+    left: 0
+    font-size: 11px
+    border-bottom: 1px solid #e1e1e8
+    border-right: 1px solid #e1e1e8
+    display: inline-block
+    background: #efefef
+    color: #666666
+    padding: 5px 10px
+
+
+.props
+  margin-bottom: 30px
+
+.proprow
+  display: flex
+  align-items: center
+  font-size: $font-size-default
+
+  &.labels
+    background: #ddd
+    font-weight: bold
+
+  &:nth-child(odd):not(.labels)
+    background: #f5f5f5
+
+.propcol
+  flex: 1 100%
+  padding: 10px
+
+  &:last-child
+    flex: 1 300%
+
+
+.token
+  border: solid 1px #e1e1e8
+  border-radius: 3px 3px 0 0
+  padding: 40px 20px 20px
+  margin: 25px 0
+  position: relative
+
+  &::before
+    content: "Aplicação"
+    position: absolute
+    top: 0
+    left: 0
+    font-size: 11px
+    border-bottom: 1px solid #e1e1e8
+    border-right: 1px solid #e1e1e8
+    display: inline-block
+    background: #efefef
+    color: #666666
+    padding: 5px 10px
+
+
+.doc-table
+  border-collapse: collapse
+  margin-bottom: 40px
+  width: 100%
+
+  tr:nth-child(even) td
+    background: #f5f5f5
+  th
+    background: #ddd
+
+  th, td
+    padding: 10px
+    text-align: left
+    font-size: $font-size-default
+
+  td
+    border-bottom: 1px solid #ddd
+
+.gangnam-style
+  position: absolute
+  top: 50%
+  left: calc(50% + (#{$sidebar} /2))
+  transform: translate(-50%, -50%)
+  display: flex
+  justify-content: center
+  align-items: center
+
+// fade effect to transition component
+.fade-enter-active, .fade-leave-active
+  transition: opacity 0.3s
+
+
+.fade-enter, .fade-leave-active
+  opacity: 0
