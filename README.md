@@ -2,6 +2,8 @@
 
 > Modal Components using Vuejs
 
+[![Build Status](https://travis-ci.org/deividmarques/lw-modal.svg?branch=master)](https://travis-ci.org/deividmarques/lw-modal)
+
 ## Build Setup
 
 ``` bash
