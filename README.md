@@ -4,6 +4,8 @@
 
 [![Build Status](https://travis-ci.org/deividmarques/lw-modal.svg?branch=master)](https://travis-ci.org/deividmarques/lw-modal)
 
+[![Coverage Status](https://coveralls.io/repos/github/deividmarques/lw-modal/badge.svg?branch=master)](https://coveralls.io/github/deividmarques/lw-modal?branch=master)
+
 ## Build Setup
 
 ``` bash

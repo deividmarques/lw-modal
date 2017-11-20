@@ -12,3 +12,7 @@ before_script:
 script:
   - yarn install
   - yarn run test
+
+
+notifications:
+  webhooks: https://coveralls.io/webhook?repo_token=ZCbNMWafZoA7syUoOJsSvmcbLKwGtlGnI
