@@ -1,13 +1,12 @@
 
 [![Build Status](https://travis-ci.org/deividmarques/lw-modal.svg?branch=master)](https://travis-ci.org/deividmarques/lw-modal)
-
 [![Coverage Status](https://coveralls.io/repos/github/deividmarques/lw-modal/badge.svg?branch=master)](https://coveralls.io/github/deividmarques/lw-modal?branch=master)
 
-# <lw-modal>
+# lw-modal
 
-> Modal Components using Vuejs
+> Componente de Modal para projetos em Vuejs
 
-Veja a documentação e exemplos: https://deividmarques.github.io/lw-modal
+> Veja a documentação e exemplos: https://deividmarques.github.io/lw-modal
 
 ## Detalhamento do componente
 
